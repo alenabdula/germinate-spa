@@ -1,0 +1,29 @@
+//
+// Hide element helper.
+.is-hidden {
+    @include hidden();
+}
+
+//
+// Hide text helper.
+.has-text-hidden {
+    @include hide-text();
+}
+
+//
+// Truncate text helper.
+.has-text-truncated {
+    @include text-truncate();
+}
+
+//
+// Invisible element helper.
+.is-invisible {
+    @include invisible();
+}
+
+//
+// Visually hidden element helper.
+.is-visually-hidden, .sr-only {
+    @include visually-hidden();
+}

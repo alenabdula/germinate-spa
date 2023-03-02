@@ -1,0 +1,149 @@
+//
+// Z-index.
+$z-top   : 3000;
+$z-middle: 2000;
+$z-bottom: 1000;
+
+// Miscellaneous.
+$easing: cubic-bezier(0.57, -0.24, 0.49, 1.56);
+$speed : 0.45s;
+
+// Transitions.
+$transition: all $speed $easing;
+
+//
+// Spacing.
+$space-xsmall: 0.25rem;
+$space-small : 0.5rem;
+$space       : 1rem;
+$space-large : 1.25rem;
+$space-xlarge: 1.5rem;
+
+//
+// Radius.
+$radius-small: 2px;
+$radius      : 3px;
+$radius-large: 5px;
+
+//
+// Greyscale.
+$white : #fff;
+$grey-0: #f8f9fa;
+$grey-1: #f1f3f5;
+$grey-2: #e9ecef;
+$grey-3: #dee2e6;
+$grey-4: #ced4da;
+$grey-5: #adb5bd;
+$grey-6: #868e96;
+$grey-7: #495057;
+$grey-8: #343a40;
+$grey-9: #212529;
+$black : #0a0a0a;
+
+//
+// Greyscale usage.
+$grey-lightest: $grey-2;
+$grey-lighter : $grey-3;
+$grey-light   : $grey-4;
+$grey         : $grey-5;
+$grey-dark    : $grey-6;
+$grey-darker  : $grey-7;
+$grey-darkest : $grey-8;
+
+//
+// Colors.
+$red      : #fa5252;
+$pink     : #e64980;
+$purple   : #be4bdb;
+$violet   : #7950f2;
+$indigo   : #4c6ef5;
+$blue     : #228ae6;
+$cyan     : #15aabf;
+$teal     : #12b886;
+$turquoise: #00d1b2;
+$green    : #40c057;
+$lime     : #82c91e;
+$yellow   : #fab005;
+$orange   : #fd7e14;
+
+//
+// Color usage.
+$primary: $indigo;
+$info   : $blue;
+$success: $green;
+$warning: $yellow;
+$danger : $red;
+$colors: (
+    "white"  : $white,
+    "grey"   : $grey,
+    "dark"  : $grey-8,
+    "black"  : $black,
+    "primary": $primary,
+    "info"   : $info,
+    "success": $success,
+    "warning": $warning,
+    "danger" : $danger
+);
+
+//
+// Brand colors.
+$brand-color-primary  : $purple;
+$brand-color-secondary: $lime;
+
+//
+// Site colors.
+$background : $grey-0;
+$text       : $grey-8;
+$text-invert: findColorInvert($text);
+$text-light : $grey;
+$text-strong: $grey-darker;
+
+//
+// Border colors.
+$border      : $grey-lighter;
+$border-hover: $grey-light;
+
+//
+// Link colors.
+$link        : $brand-color-primary;
+$link-visited: $brand-color-primary;
+$link-hover  : darken($brand-color-primary, 10%);
+$link-active : darken($brand-color-primary, 10%);
+
+//
+// Typography.
+$family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-monospace: SFMono-Regular, Inconsolata, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base: $family-monospace;
+
+//
+// Font sizing.
+$size-1: 3rem;
+$size-2: 2.5rem;
+$size-3: 2rem;
+$size-4: 1.5rem;
+$size-5: 1.25rem;
+$size-6: 1rem;
+$size-7: 0.85rem;
+
+//
+// Font weight.
+$weight-light   : 300;
+$weight-normal  : 400;
+$weight-semibold: 500;
+$weight-bold    : 700;
+
+//
+// Block quotes.
+$open-blockquote : '"';
+$close-blockquote: '"';
+
+//
+// Breakpoints.
+$breakpoints: (
+    baby    : 544px,
+    toddler : 768px,
+    teenager: 992px,
+    adult   : 1200px,
+    senior  : 1400px,
+);

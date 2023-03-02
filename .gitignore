@@ -1,0 +1,4 @@
+node_modules/
+public/js/app.js.LICENSE.txt
+public/img/gallery/*.jpg
+public/img/gallery/originals/*.jpg

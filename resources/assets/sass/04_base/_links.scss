@@ -1,0 +1,21 @@
+//
+// Links
+a {
+    color: $link;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:active {
+        outline: 0;
+        color: $link-active;
+    }
+
+    &:hover {
+        outline: 0;
+        color: $link-hover;
+    }
+
+    &:focus {
+        outline-color: $link;
+    }
+}

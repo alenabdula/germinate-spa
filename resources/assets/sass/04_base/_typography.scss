@@ -1,0 +1,81 @@
+//
+// Typography
+::selection {
+    background: lighten($primary, 20%);
+}
+
+abbr[title] {
+    text-decoration: none;
+    border-bottom: 2px dotted $primary;
+    padding-bottom: 1px;
+}
+
+b, strong {
+    font-weight: $weight-bold;
+}
+
+em, i {
+    font-style: italic;
+}
+
+dfn {
+    font-style: italic;
+}
+
+mark {
+    background: lighten($primary, 18%);
+}
+
+small {
+    font-size: 90%;
+}
+
+sub,
+sup {
+    font-size: 90%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5rem;
+}
+
+sub {
+    bottom: -0.5rem;
+}
+
+hr {
+    height: 0;
+}
+
+kbd {
+    // border: 1px solid $border;
+    // padding: 0.3rem;
+    // margin-right: 0.5rem;
+    // border-radius: $radius;
+    font-family: $family-monospace;
+    kbd {
+        background-color: $grey-2;
+        border-radius: $radius;
+        padding: $space-xsmall;
+        border: 1px solid $border;
+    }
+}
+
+samp,
+code {
+    background-color: $grey-2;
+    color: $red;
+    // display: block;
+    padding: 0.2rem;
+    font-size: 90%;
+    font-family: $family-monospace;
+}
+
+samp,
+pre {
+    overflow: auto;
+    margin: 0;
+}

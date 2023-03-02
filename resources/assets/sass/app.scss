@@ -1,0 +1,18 @@
+//
+//  Bootstrap utilities.
+//  01 - Settings - Global Variables & Configuration
+//  02 - Tools - Collection of Function, Media Queries & Mixins
+@import 'bootstrap';
+
+#app {
+    .container {
+        // display: flex;
+        // flex-direction: column;
+        padding: $space-xlarge;
+    }
+    .content {
+        max-width: 640px;
+        margin-top: $space-xlarge;
+        margin-bottom: $space-xlarge;
+    }
+}

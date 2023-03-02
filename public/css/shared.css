@@ -1,0 +1,16 @@
+html {
+  background: #f8f9fa;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: SFMono-Regular, Inconsolata, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  line-height: 1.64;
+  background-color: transparent;
+  color: #343a40;
+}

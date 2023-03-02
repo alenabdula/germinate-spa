@@ -1,0 +1,134 @@
+@mixin control {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: $radius;
+    box-shadow: none;
+    display: inline-flex;
+    font-size: 90%;
+    font-family: $family-monospace;
+    justify-content: flex-start;
+    line-height: 1.5;
+    padding-bottom: $space-xsmall;
+    padding-left: $space-small;
+    padding-right: $space-small;
+    padding-top: $space-xsmall;
+    position: relative;
+    &:focus,
+    &:active {
+        outline: none;
+    }
+    &[disabled] {
+        cursor: not-allowed;
+    }
+}
+@mixin input {
+    @include control;
+    background-color: $white;
+    border-color: $grey-4;
+    color: inherit;
+    &:hover {
+        border-color: $grey-5;
+    }
+    &:active, &:focus {
+        border-color: $grey-5;
+        box-shadow: 0 0 0 1px rgba($black, 0.1);
+    }
+}
+//
+// Hidden.
+@mixin hidden {
+    display: none;
+    visibility: hidden;
+}
+
+//
+// Hide text.
+@mixin hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    font: "0/0" a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+//
+// Truncate text.
+@mixin text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+//
+// Invisible.
+@mixin invisible {
+    visibility: hidden;
+}
+
+//
+// Visually hidden.
+@mixin visually-hidden {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    &.is-focusable {
+        &:active,
+        &:focus {
+            position: static;
+            clip: auto;
+            height: auto;
+            width: auto;
+            margin: 0;
+            overflow: visible;
+        }
+    }
+}
+
+
+@mixin burger() {
+    @include control();
+    cursor: pointer;
+    display: block;
+    height: 3.25rem;
+    position: fixed;
+    width: 3.25rem;
+    top: $space;
+    right: $space;
+    // background-color: $red;
+    transition-duration: 1s;
+    * {
+        transition-duration: 0.4s;
+    }
+    &.is-active {
+        // background-color: $grey-9;
+        span {
+            // background-color: $red;
+        }
+        span:nth-child(1) { transform: translateY(5px) rotate(45deg); }
+        span:nth-child(2) { opacity: 0; }
+        span:nth-child(3) { transform: translateY(-5px) rotate(-45deg); }
+    }
+    &:hover {}
+    span {
+        background-color: $blue;
+        display: block;
+        height: 1px;
+        left: calc(50% - 8px);
+        position: absolute;
+        transform-origin: center;
+        width: 16px;
+        &:nth-child(1) { top: calc(50% - 6px); }
+        &:nth-child(2) { top: calc(50% - 1px); }
+        &:nth-child(3) { top: calc(50% + 4px); }
+    }
+}

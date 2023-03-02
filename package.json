@@ -1,0 +1,33 @@
+{
+    "private": true,
+    "name": "germinateSPA",
+    "version": "0.0.1",
+    "scripts": {
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "production": "mix --production",
+        "gallery": "node ./Gallery.js",
+        "gallery-resize": "node ./GalleryResize.js",
+        "gallery-production": "npm run gallery && npm run gallery-resize"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.27.12",
+        "browser-sync-webpack-plugin": "^2.3.0",
+        "laravel-mix": "^6.0.49",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.58.3",
+        "sass-loader": "^13.2.0",
+        "vue-loader": "^17.0.1",
+        "vue-template-compiler": "^2.7.14",
+        "webextension-polyfill": "^0.10.0",
+        "webpack-livereload-plugin": "^3.0.2"
+    },
+    "dependencies": {
+        "mitt": "^3.0.0",
+        "sharp": "^0.31.3",
+        "vue": "^3.2.47",
+        "vue-router": "^4.1.6"
+    }
+}

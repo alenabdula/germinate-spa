@@ -1,0 +1,15 @@
+//
+//  Components
+//  Designed & Styles Components
+
+.table {
+    min-width: 320px;
+    td, th {
+        border: 1px solid transparent;
+        border-width: 0 0 1px;
+        padding: $space;
+        vertical-align: top;
+        transition: $transition;
+        border-color: $grey-4;
+    }
+}
